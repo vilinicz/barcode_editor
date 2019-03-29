@@ -54,12 +54,12 @@
       }"
     />
 
-    <a
+    <!--a
       href="https://github.com/vilinicz/barcode_editor"
       class="link-to-github"
     >
       Source on Github
-    </a>
+    </a-->
   </div>
 </template>
 
