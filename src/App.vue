@@ -53,6 +53,13 @@
         '--color-secondary': colorSecondary
       }"
     />
+
+    <a
+      href="https://github.com/vilinicz/barcode_editor"
+      class="link-to-github"
+    >
+      Source on Github
+    </a>
   </div>
 </template>
 
@@ -119,6 +126,18 @@ export default {
   display: grid;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
+
+  .link-to-github {
+    position: fixed;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgba(#fff, 0.9);
+    color: var(--blue);
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 1px 1px 2px rgba(#000, 0.075);
+  }
 
   .editor {
     display: flex;
