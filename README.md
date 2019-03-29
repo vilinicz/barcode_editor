@@ -1,5 +1,5 @@
 # Barcode editor | Bluecode test task
-###[Demo](http://vilinicz.com/barcode_editor/)
+### [Demo](http://vilinicz.com/barcode_editor/)
 ![](public/barcode_editor.gif)  
 ### Summary
 - [x] Enter up to 19 digits
