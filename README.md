@@ -1,24 +1,24 @@
-### Barcode editor | Bluecode test task
+# Barcode editor | Bluecode test task
 ![](public/barcode_editor.gif)  
-#### Summary
+### Summary
 - [x] Enter up to 19 digits
 - [x] Calculate checksum
 - [x] Generate fluid barcode from digits & checksum
 - [x] Change colors of barcode
 
-##### Stack used
+#### Stack used
 Default Vue app created with vue-cli. 
 Added custom reset and color styles (`src/assets/styles/`) for fast prototyping.  
 
-##### Completed in 3 days total
+#### Completed in 3 days total
 1) read task and think
 2) coding (~6 hours)
 3) deploy & readme  
 ------
-#### Tech. highlights
-##### Checksum calculation
+### Tech. highlights
+#### Checksum calculation
 Alternative approach: we also can use loops - less readable but more performant for some cases
-```vue
+```js
 checksum() {
   if (!this.code) return null;
 
@@ -33,7 +33,7 @@ checksum() {
   return remainder === 0 ? 0 : 10 - remainder;
 }
 ```  
-##### Bars' sizing 
+#### Bars' sizing 
 Bars are made with `div` blocks sized in percent units. 
 Another possible approaches:
 - SVG: ~same performance, harder implementation, research needed.
@@ -42,7 +42,7 @@ Another possible approaches:
 Universal sizing algorithm still isn't obvious for me, 
 so optimal decision in terms *'get this job done'* 
 was to check if Digit belongs to specific range with given characteristics.
-```vue
+```js
  barStyle(d) {
    let width;
    let height;
@@ -73,7 +73,7 @@ was to check if Digit belongs to specific range with given characteristics.
    };
  }
 ``` 
-#### Some possible enhancements
+### Some possible enhancements
 - use Vuex as data storage for more complex interactions;
 - move Barcode out from its background for better reusabilty;
 - use more global styles or css/ui-frameworks; 
