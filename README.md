@@ -1,5 +1,7 @@
-# Barcode editor | Bluecode test task
+# Barcode editor 
 ### [Demo](http://vilinicz.com/barcode_editor/)
+> Tested only in Chrome desktop!
+
 ![](public/barcode_editor.gif)  
 ### Summary
 - [x] Enter up to 19 digits
@@ -78,6 +80,7 @@ was to check if Digit belongs to specific range with given characteristics.
 - use Vuex as data storage for more complex interactions;
 - move Barcode out from its background for better reusabilty;
 - use more global styles or css/ui-frameworks; 
+- mobile views / cross browser testing
 - moreover: maybe start with Nuxt.js, not just Vue;
 - some interface ideas: 
   - we will need sidebar/toolbar with more menus/tools;
